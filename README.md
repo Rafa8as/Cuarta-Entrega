@@ -1,10 +1,10 @@
 
 
-## CODERHOUSE - BACKEND #43360 - Tercera Entrega de Proyecto Final
+## CODERHOUSE - BACKEND #43360 - Practica Integradora numero cuatro
 
 Tutoria a cargo de: Laura Acuña
 
-**Repositorio para la entrega "DOCUMENTACION DE API" de la clase numero 39 "Documentar API"**
+**Repositorio para la entrega "Cuarta practica de Integradocion sobre mi ecommerce" de la clase numero 44 "Cuarta Practica Integradora"**
 
 ## Proyecto en Progreso: Servidor Backend para Ecommerce
 
