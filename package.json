@@ -9,14 +9,20 @@
     "test:products": "mocha ./test/products.test.js --timeout 10000",
     "test:sessions": "mocha ./test/sessions.test.js --timeout 10000",
     "start": "SET NODE_ENV=production && nodemon ./src/app.js",
-		"start:local": "SET NODE_ENV=local && nodemon ./src/app.js",
-		"start:development": "SET NODE_ENV=development && nodemon ./src/app.js",
-    "dev": "nodemon ./src/app.js",
-    "start:docker": "nodemon ./src/app.js"
+    "start:local": "SET NODE_ENV=local && nodemon ./src/app.js",
+    "start:development": "SET NODE_ENV=development && nodemon ./src/app.js",
+    "start:docker": "nodemon ./src/app.js",
+    "format": "prettier --write \"**/*.js\""
   },
-  "author": "",
+  "engines": {
+
+    "node": "16.x"
+    
+  },
+  "author": "Rafael Ochoa",
   "license": "ISC",
   "dependencies": {
+    "@types/sinon-chai": "^3.2.11",
     "bcrypt": "^5.1.0",
     "connect-mongo": "^5.0.0",
     "cookie-parser": "^1.4.6",
@@ -40,6 +46,8 @@
     "passport-github2": "^0.1.12",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
+    "sinon": "^17.0.1",
+    "sinon-chai": "^3.7.0",
     "socket.io": "^4.7.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",

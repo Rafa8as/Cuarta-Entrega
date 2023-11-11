@@ -22,8 +22,8 @@ const initializePassport = () => {
 	passport.use(
 		'login',
 		new LocalStrategy(
-			{ passReqToCallback:true, usernameField: 'email' },
-			async (username, password, done) => {
+			{ passReqToCallback: true, usernameField: 'email' },
+			async (req, username, password, done) => {
 				try {
 					console.log("PASSWORD", password)
 					if (username == 'rafa8as@gmail.com' ) {
@@ -99,8 +99,8 @@ const initializePassport = () => {
 						let user = await userModel.findOne({ email: profile._json.email });
 						if (!user) {
 							user = await userModel.create({
-								first_name: profile._json.name.split('')[0],
-								last_name: profile._json.name.split('')[1],
+								first_name: profile._json.name.split(' ')[0],
+								last_name: profile._json.name.split(' ')[1],
 								email: profile._json.email,
 								password: '',
 							});
